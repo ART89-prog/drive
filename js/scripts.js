@@ -1,6 +1,6 @@
 $(() => {
 
-	
+
 	// Ширина окна для ресайза
 	WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
 	WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
@@ -28,7 +28,12 @@ $(() => {
 	})
 
 
-
+	// Показать контент 
+	$(".link-more").click(function (e) {
+		e.preventDefault();
+		$(".program_item").removeClass("hide");
+		$(".link-more").addClass("active");
+	});
 
 
 	$('body').on('click', '.modal_link', function (e) {
@@ -84,14 +89,14 @@ $(() => {
 
 
 
-	$(window).scroll(function(){
-		if($(window).scrollTop()>180){
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > 180) {
 			$('#top').fadeIn(400)
-		}else{
+		} else {
 			$('#top').fadeOut(300)
 		}
 	});
-	
+
 
 	// Скрол к пунктам меню
 	$(".scroll").on("click", function (e) {
