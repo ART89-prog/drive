@@ -830,9 +830,10 @@ header .menu .item a:hover {
 
 
 
-
+.faq {
+    padding-bottom: 63px;
+}
 .accordion_item {
-    background: #FFF;
     filter: drop-shadow(0px 27px 137px rgba(0, 0, 0, 0.05));
     backdrop-filter: blur(10px);
     margin-bottom: 25px;
@@ -846,16 +847,22 @@ header .menu .item a:hover {
     justify-content: space-between;
     cursor: pointer;
     padding-left: 62px;
-    transition: all .4s; 
+    transition: all .2s; 
+    position: relative;
+    z-index: 2;
 }
-
-.accordion_item .head span {
-    font-weight: 600;
-    font-size: var(--font_size_title);
-    line-height: 28px;
-    color: #FFFFFF;
+.accordion_item .head:before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    transform: skewX(-20deg);
+    width: 100%;
+    height: 84px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 20px;
 }
-
 .accordion_item .head .accordion_title {
     color: #4E4E4E;
     font-family: "Raleway";
@@ -866,10 +873,8 @@ header .menu .item a:hover {
     margin-bottom: 0;
     margin-right: 20px;
     text-align: start;
-    transition: all .4s; 
     padding: 30px 0;
 }
-
 .accordion_item .data {
     color: #4E4E4E;
     font-family: "Raleway";
@@ -877,23 +882,16 @@ header .menu .item a:hover {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 0 26px 26px; 
+    padding: 26px 26px 26px 62px; 
+    background: #fff;
+    margin-top: 10px;
 }
-
 .accordion .accordion_item .data {
     display: none;
 }
-
 .accordion .accordion_item .data p+p {
     margin-top: 20px;
 }
-
-.accordion .accordion_item.active {
-}
-
-.accordion .accordion_item.active .head .title {
-}
-
 .faq_btn {
     background: #224FD6;
     box-shadow: 0px 27px 137px rgba(0, 0, 0, 0.05);
@@ -919,9 +917,6 @@ header .menu .item a:hover {
     font-weight: 700;
     color: #fff;
 }
-/* .accordion .accordion_item.active .faq_btn {
-    background: #FFB800;
-} */
 .accordion_item.active .faq_btn b {
     display: block;
     margin-top: -12px;
@@ -931,4 +926,57 @@ header .menu .item a:hover {
 }
 .accordion_item.active .faq_btn span {
     display: none;
+}
+
+
+
+
+
+.advantages_items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 30px;    
+}
+.advantages_item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.advantages_item:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.advantages_item:nth-child(3) {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.advantages_item:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.advantages_item:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.advantages_item:nth-child(6) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.advantages_item:nth-child(7) {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
