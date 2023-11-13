@@ -1,54 +1,6 @@
 $(() => {
 
-	// Основной слайдер на главной
-	if ($('.first_section .swiper').length) {
-		new Swiper('.first_section .swiper', {
-			loop: true,
-			speed: 750,
-			slidesPerView: 1,
-			effect: 'fade',
-			fadeEffect: {
-				crossFade: true
-			},
-			watchSlidesVisibility: true,
-			slideActiveClass: 'active',
-			slideVisibleClass: 'visible',
-			spaceBetween: 0,
-			slidesPerView: 1,
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
-			},
-			pagination: {
-				el: '.swiper-pagination',
-				type: 'fraction',
-				clickable: true
-			}
-		})
-	}
-
-
-	if ($('.advantages .swiper').length) {
-		new Swiper('.advantages .swiper', {
-			loop: true,
-			speed: 750,
-			slidesPerView: 1,
-			effect: 'fade',
-			fadeEffect: {
-			crossFade: true
-			},
-			watchSlidesVisibility: true,
-			slideActiveClass: 'active',
-			slideVisibleClass: 'visible',
-			spaceBetween: 0,
-			slidesPerView: 1,
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true
-			}
-		})
-	}
-
+	
 	// Ширина окна для ресайза
 	WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
 	WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
@@ -172,59 +124,6 @@ $(() => {
 		});
 	});
 
-
-
-	
-    var swiper = new Swiper(".about .swiper", {
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-    });
-
-
-		// Показать контент 
-		$(".link-more").click(function (e) {
-			e.preventDefault();
-			$(".works_item").removeClass("hide");
-			$(".link-more").addClass("active");
-		});
-  
-
-
-
-    var swiper = new Swiper(".slider__thumbs .swiper", {
-      spaceBetween: 20,
-	  slidesPerView: 8,
-      freeMode: true,
-      watchSlidesProgress: true,
-	  breakpoints: {
-		0: {
-			spaceBetween: 15,
-			slidesPerView: 2
-		},
-		767: {
-			spaceBetween: 15,
-			slidesPerView: 3
-		},
-		1023: {
-			spaceBetween: 15,
-			slidesPerView: 5
-		}
-	}
-    });
-    var swiper2 = new Swiper(".slider__images .swiper", {
-      spaceBetween: 0,
-	  slidesPerView: 1,
-	  navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-	  grabCursor: true,
-      thumbs: {
-        swiper: swiper,
-      },
-    });
 
 
 
