@@ -410,7 +410,6 @@ header:before {
     content: "";
     border-radius: 50%;
     background: rgba(7, 12, 15, 0.05);
-    filter: blur(185.5px);
     width: 1132px;
     height: 1132px;
     top: -400px;
@@ -864,8 +863,7 @@ header .menu .item a:hover {
     padding-bottom: 63px;
 }
 .accordion_item {
-    filter: drop-shadow(0px 27px 137px rgba(0, 0, 0, 0.05));
-    backdrop-filter: blur(10px);
+    box-shadow: 0px 27px 137px rgba(0, 0, 0, 0.05);
     margin-bottom: 25px;
 }
 .accordion_item:last-child {
@@ -925,7 +923,6 @@ header .menu .item a:hover {
 .faq_btn {
     background: var(--text_color);
     box-shadow: 0px 27px 137px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
     justify-content: center;
