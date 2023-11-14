@@ -1173,8 +1173,6 @@ header .menu .item a:hover {
     padding: 57px 0 82px;
     background: #224FD6;
 }
-.cont {
-}
 .bottom-block .callback_form {
     background: none;
     padding: 0;
@@ -1199,7 +1197,47 @@ header .menu .item a:hover {
     color: #000;
     background: linear-gradient(0deg, #FFD400 0%, #FFD400 100%), #224FD6;
 }
-.line {
+
+
+
+
+footer {
+    padding: 36px 0;
+    background: #4E4E4E;
 }
-.field {
+footer .header_logo b,
+footer .header_logo span {
+    color: #fff;
+}
+footer .cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 353px);
+}
+footer .menu .item a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Raleway";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 103.295%; 
+    white-space: nowrap;
+    margin-right: 15px;
+    display: block;
+}
+footer .menu .item a:last-child {
+    margin-right: 0;
+}
+footer .menu .item a:hover {
+    color: #000;
+}
+.footer .menu .item a:active {
+    color: #000;
 }
