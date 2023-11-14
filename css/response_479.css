@@ -54,6 +54,31 @@
     .accordion_item .data {
         font-size: 12px;
     }
+    .first-section {
+        padding: 30px 0 26px;
+    }
+    .training {
+        padding-bottom: 23px;
+    }
+    .program {
+        padding-bottom: 21px;
+    }
+    .tarif {
+        padding-bottom: 53px;
+    }
+    .accordion_item {
+        margin-bottom: 8px;
+    }
+    .advantages {
+        padding-bottom: 41px;
+    }
+    .tarif_item ul li {
+        font-size: 12px;
+        padding-left: 22px;
+    }
+    .tarif_item ul li:before {
+        top: -2px;
+    }
 
 
 

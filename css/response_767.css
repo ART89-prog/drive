@@ -50,6 +50,7 @@
     .program_item {
         width: 100%;
         padding: 10px 0 0 12px;
+        border-radius: 16px;
     }
     .program_items {
         gap: 9px;
@@ -121,6 +122,33 @@
     }
     .bottom-block {
         padding: 20px 0 38px;
+    }
+    .first-section_title span + span {
+        margin-top: 22px;
+    }
+    .program {
+        padding-bottom: 50px;
+    }
+    .tarif {
+        padding-bottom: 77px;
+    }
+    .advantages_items {
+        grid-gap: 19px;
+    }
+    .accordion_item {
+        margin-bottom: 18px;
+    }
+    .advantages {
+        padding-bottom: 57px;
+    }
+    .faq {
+        padding-bottom: 41px;
+    }
+    .tarif_item ul li {
+        font-size: 15px;
+    }
+    .tarif_item-period {
+        font-size: 16px;
     }
 
     
