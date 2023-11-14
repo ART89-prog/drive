@@ -930,12 +930,144 @@ header .menu .item a:hover {
 
 
 
+.callback {
+    padding-bottom: 136px;
+}
+.callback_title {
+    margin-bottom: 141px;
+}
+.callback_wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 1283px;
+    margin: 90px 0 90px auto;    
+}
+.callback_wrap:before {
+    position: absolute;
+    content: "";
+    width: 1099px;
+    height: calc(100% + 180px);
+    background: #224FD6;
+    left: -950px;
+    top: -90px;
+    border-radius: 20px;
+    -webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);      
+    z-index: -1;
+}
+.callback_wrap:after {
+    position: absolute;
+    content: "";
+    width: 1099px;
+    height: calc(100% + 180px);
+    background: #224FD6;
+    right: -950px;
+    top: -90px;
+    border-radius: 20px;
+    -webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);      
+    z-index: -1;
+}
+.callback_form {
+    z-index: 222;
+    position: relative;
+    padding: 107px 142px 184px 283px;
+    background: #fff;
+    border-radius: 32px;
+}
+.callback_form-title {
+    color: #000;
+    font-family: "Benzin";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 38px;
+}
+.callback_form-text {
+    color: #4E4E4E;
+    font-family: "Raleway";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 27px;
+}
+.callback_form .line {
+    display: flex;
+    gap: 15px;
+}
+.callback_form .line .field {
+    border: 1px solid #707070;
+    border-radius: 10px;
+    -webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg);  
+    height: 60px;
+    padding: 0 30px;  
+    max-width: 300px;
+}
+.callback_form .line input {
+    -webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);  
+    border: none;
+    color: #4E4E4E;
+    font-family: "Raleway";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px;
+}
+.callback_form .line input::placeholder {
+    color: #4E4E4E;
+    font-family: "Raleway";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px;
+}
+.callback_form button {
+    border-radius: 10px;
+    -webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-o-transform: skew(-20deg); 
+    width: 281px;
+    height: 60px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: radial-gradient(85.13% 90.77% at 46.89% 9.23%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), #224FD6;
+}
+.callback_form button span {
+    -webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);   
+    display: block;
+}
+.callback_img {
+    position: absolute;
+    left: -470px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 555;
+}
 
 
+.advantages {
+    padding-bottom: 107px;
+}
 .advantages_items {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-gap: 30px;    
 }
 .advantages_item:nth-child(1) {
@@ -980,15 +1112,12 @@ header .menu .item a:hover {
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.advantages {
+.advantages_item:nth-child(3) .advantages_item-img {
+    margin-right: 30px;
 }
-.cont {
-}
-.advantages_title {
-}
-.title {
-}
-.advantages_items {
+.advantages_item:nth-child(6) .advantages_item-img,
+.advantages_item:nth-child(7) .advantages_item-img {
+    margin-right: 100px;
 }
 .advantages_item {
     display: flex;
@@ -1007,7 +1136,7 @@ header .menu .item a:hover {
     width: 260px;
     height: 100%;
     background: #224FD6;
-    right: -100px;
+    right: -120px;
     top: 0;
     border-radius: 20px;
     -webkit-transform: skew(-20deg);
@@ -1015,11 +1144,62 @@ header .menu .item a:hover {
 	-o-transform: skew(-20deg);      
     z-index: -1;
 }
+.advantages_item:nth-child(6):before,
+.advantages_item:nth-child(7):before {
+    width: 380px;
+}
+.advantages_item:nth-child(3):before {
+    width: 350px;
+}
 .advantages_item-text {
+    color: #666;
+    font-family: "Raleway";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 .advantages_item-img {
     margin-top: auto;
 }
 .advantages_item-img img {
     display: block;
+}
+
+
+
+
+.bottom-block {
+    padding: 57px 0 82px;
+    background: #224FD6;
+}
+.cont {
+}
+.bottom-block .callback_form {
+    background: none;
+    padding: 0;
+}
+.bottom-block .callback_form-title {
+    color: #fff;
+    margin-bottom: 16px;
+}
+.bottom-block .callback_form-text {
+    color: #FFF;
+    font-family: "Raleway";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 32px;
+}
+.bottom-block .callback_form .line .field {
+    background: #fff;
+}
+.bottom-block .callback_form button {
+    color: #000;
+    background: linear-gradient(0deg, #FFD400 0%, #FFD400 100%), #224FD6;
+}
+.line {
+}
+.field {
 }
