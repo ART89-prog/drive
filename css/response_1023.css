@@ -230,6 +230,12 @@
     .first-section .btn {
         margin: 0 auto;
     }
+    .accordion_item .data {
+        font-size: 20px;
+    }
+    .bottom-block {
+        padding: 40px 0 40px;
+    }
 
 
     

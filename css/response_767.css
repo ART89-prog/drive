@@ -49,8 +49,81 @@
     }
     .program_item {
         width: 100%;
+        padding: 10px 0 0 12px;
+    }
+    .program_items {
+        gap: 9px;
+    }
+    .program_item-title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .tarif_items {
+        gap: 26px;
+    }
+    .tarif_item {
+        width: 100%;
+    }
+    .callback_wrap {
+        margin: 20px 0 70px auto;
+    }
+    .callback_wrap:before {
+        height: calc(100% - 120px);
+        top: -60px;
+        left: -960px;
+    }
+    .callback_title {
+        color: #fff;
+        position: relative;
+        z-index: 99;
+    }
+    .callback_title b {
+        color: #3F3F3F;
+    }
+    .callback_form-title {
+        font-size: 22px;
+        margin-bottom: 17px;
+    }
+    .callback_wrap:after {
+        height: calc(100% - 120px);
+        top: 60px;
+    }
+    .callback_wrap:after {
+        height: calc(100% - 30px);
+        top: 60px;
+    }
+    .callback_form {
+        padding: 20px;
+    }
+    .btn {
+        font-size: 16px;
+    }
+    .callback_form button {
+        font-size: 16px;
+    }
+    .accordion_item .head .accordion_title {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .faq_btn {
+        width: 102px;
+        height: 71px;
+    }
+    .accordion_item .head:before {
+        border-radius: 10px;
+    }
+    .accordion_item .head {
+        padding-left: 20px;
+    }
+    .accordion_item .data {
+        font-size: 16px;
+        padding: 15px;
+    }
+    .bottom-block {
+        padding: 20px 0 38px;
     }
 
+    
 
 
 
