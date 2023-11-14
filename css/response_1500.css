@@ -1,0 +1,17 @@
+@media print, (max-width: 1500px) {
+
+    :root {
+        --font_size_title: 40px;
+    }
+    header .menu .item a,
+    footer .menu .item a {
+        font-size: 21px;
+    }
+    .advantages_item-text {
+        font-size: 20px;
+    }
+
+
+
+}
+

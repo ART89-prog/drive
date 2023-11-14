@@ -1,6 +1,86 @@
 @media print, (max-width: 1300px) {
 
-
+    :root {
+        --font_size_title: 36px;
+        --font_size: 18px;
+    }
+    header .menu .item a, 
+    footer .menu .item a {
+        font-size: 19px;
+    }
+    .header_logo b,
+    footer .header_logo b {
+        font-size: 27px;
+        white-space: nowrap;
+    }
+    .header_logo span,
+    footer .header_logo span {
+        font-size: 15px;
+        display: block;
+        margin-top: -3px;
+    }
+    header .menu,
+    footer .menu {
+        width: calc(100% - 265px);
+    }
+    .first-section {
+        padding: 50px 0 50px;
+    }
+    .training_item-title {
+        font-size: 22px;
+        margin-bottom: 20px;        
+    }
+    .training_items {
+        gap: 15px;
+    }
+    .training_item {
+        width: calc(100%/3 - 15px);
+        border-radius: 20px;
+        padding: 20px 0 0 20px;
+    }
+    .program_items {
+        gap: 15px;
+    }
+    .program_item {
+        border-radius: 20px;
+        padding: 20px 0px 0px 20px;
+        width: calc(100%/3 - 15px);
+    }
+    .program_item-title {
+        font-size: 26px;
+    }
+    .program_item-icon img {
+        width: 42px;
+        margin-left: 18px;
+    }
+    .program_item-icon {
+        width: 175px;
+    }
+    .program_item-info {
+        width: calc(100% - 90px);
+        padding: 9px 0 30px 0;
+    }
+    .callback_img {
+        display: none;
+    }
+    .callback_form {
+        padding: 20px 30px;
+        border-radius: 20px;
+    }
+    .callback_wrap:before {
+        height: calc(100% + 60px);
+        top: -30px;
+    }
+    .callback_wrap:after {
+        height: calc(100% + 60px);
+        top: -30px;
+    }
+    .callback_title {
+        margin-bottom: 0px;
+    }
+    .callback {
+        padding-bottom: 0;
+    }
 
 
 

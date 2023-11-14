@@ -172,8 +172,8 @@ input[type=number] {
 :root {
     --bg: #F6F6F5;
     --scroll_width: 17px;
-    --text_color: #191C26;
-    --font_size: 18px;
+    --text_color: #224FD6;
+    --font_size: 22px;
     --font_size_title: 48px;
     --font_family1: 'Benzin';
     --font_family2: 'Raleway';
@@ -431,7 +431,7 @@ header .menu {
 header .menu .item a {
     text-decoration: none;
     color: #3D3D3D;
-    font-family: "Raleway";
+    font-family: var(--font_family2);
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
@@ -447,18 +447,18 @@ header .menu .item a:last-child {
 }
 
 header .menu .item a:hover {
-    color: #224FD6;
+    color: var(--text_color);
 }
 
 .header .menu .item a:active {
-    color: #224FD6;
+    color: var(--text_color);
 }
 
 .header_logo {
     text-decoration: none;
 }
 .header_logo b {
-    color: #224FD6;
+    color: var(--text_color);
     font-family: "Racing Sans One";
     font-size: 35px;
     font-style: normal;
@@ -466,12 +466,12 @@ header .menu .item a:hover {
     line-height: normal;   
 }
 .header_logo span {
-    color: #224FD6;
-    font-family: "Raleway";
+    color: var(--text_color);
+    font-family: var(--font_family2);
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
-    line-height: normal; 
+    line-height: 1; 
 }
 
 
@@ -491,8 +491,8 @@ header .menu .item a:hover {
 }
 .first-section_title {
     color: #3F3F3F;
-    font-family: "Benzin";
-    font-size: 48px;
+    font-family: var(--font_family1);
+    font-size: var(--font_size_title);
     font-style: normal;
     font-weight: 400;
     line-height: 116.667%;
@@ -509,6 +509,12 @@ header .menu .item a:hover {
 }
 .first-section_img {
     margin-right: -215px;
+    width: 1071px;
+    height: 761px;
+}
+.first-section_img img {
+    width: 100%;
+    height: 100%;
 }
 .first-section_info ul {
     list-style: none;
@@ -521,7 +527,7 @@ header .menu .item a:hover {
 }
 .first-section_info ul li {
     color: #3F3F3F;
-    font-family: "Raleway";
+    font-family: var(--font_family2);
     font-size: 26.406px;
     font-style: normal;
     font-weight: 300;
@@ -535,7 +541,7 @@ header .menu .item a:hover {
     text-decoration: none;
     color: #000;
     text-align: center;
-    font-family: "Raleway";
+    font-family: var(--font_family2);
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -544,6 +550,11 @@ header .menu .item a:hover {
     height: 63px;
     border-radius: 12.827px;
     background: radial-gradient(90.77% 90.77% at 50% 9.23%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), #FFD400; 
+    transition: all .4s;
+}
+.btn:hover {
+    background: var(--text_color);
+    color: #fff;
 }
 
 
@@ -552,8 +563,8 @@ header .menu .item a:hover {
 }
 .title {
     color: #3F3F3F;
-    font-family: "Benzin";
-    font-size: 48px;
+    font-family: var(--font_family1);
+    font-size: var(--font_size_title);
     font-style: normal;
     font-weight: 400;
     line-height: 117%; 
@@ -570,7 +581,7 @@ header .menu .item a:hover {
     justify-content: space-between;
 }
 .training_item {
-    padding: 31px 0 0 27px;
+    padding: 31px 0 0 41px;
     border-radius: 32px;
     background: #FFF;
     width: 33%;
@@ -585,7 +596,7 @@ header .menu .item a:hover {
 }
 .training_item-title {    
     color: #000;
-    font-family: "Raleway";
+    font-family: var(--font_family2);
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -595,7 +606,7 @@ header .menu .item a:hover {
 }
 .training_item-text {
     color: #4E4E4E;
-    font-family: "Raleway";
+    font-family: var(--font_family2);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -607,6 +618,15 @@ header .menu .item a:hover {
 .training_item-img {
     text-align: end;
     margin-top: auto;
+    margin-left: auto;
+    width: 334px;
+    height: 229px;
+}
+.training_item-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -624,7 +644,6 @@ header .menu .item a:hover {
 .program_item {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     border-radius: 32px;
     background: #FFF;
     padding: 25px 0px 0px 40px;
@@ -646,8 +665,8 @@ header .menu .item a:hover {
 }
 .program_item-title {
     color: #000;
-    font-family: "Raleway";
-    font-size: 48px;
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -658,19 +677,19 @@ header .menu .item a:hover {
 }
 .program_item-info ul li {
     color: #4E4E4E;
-    font-family: "Raleway";
-    font-size: 22px;
+    font-family: var(--font_family2);
+    font-size: var(--font_size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 .program_item-icon {
     width: 224px;
-	height: 326px;
+	height: 100%;
 	-webkit-transform: skew(-20deg);
 	-moz-transform: skew(-20deg);
 	-o-transform: skew(-20deg);
-	background: #224FD6;
+	background: var(--text_color);
     border-radius: 20px;
     border-bottom-left-radius: 0;   
     display: flex;
@@ -710,7 +729,7 @@ header .menu .item a:hover {
 }
 .tarif_item-title {
     color: #FFF;
-    font-family: "Benzin";
+    font-family: var(--font_family1);
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -719,7 +738,7 @@ header .menu .item a:hover {
     -webkit-transform: skew(-20deg);
 	-moz-transform: skew(-20deg);
 	-o-transform: skew(-20deg);
-	background: #224FD6;
+	background: var(--text_color);
     border-radius: 20px;
     text-align: center;
     margin: 0 auto 32px;
@@ -735,7 +754,7 @@ header .menu .item a:hover {
 .tarif_item-period {
     color: #000;
     text-align: center;
-    font-family: "Benzin";
+    font-family: var(--font_family1);
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -747,7 +766,7 @@ header .menu .item a:hover {
 .tarif_item-price {
     color: #F90;
     text-align: center;
-    font-family: "Benzin";
+    font-family: var(--font_family1);
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
@@ -762,7 +781,7 @@ header .menu .item a:hover {
     padding-left: 32px;
     position: relative;
     color: #000;
-    font-family: "Raleway";
+    font-family: var(--font_family2);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -789,13 +808,17 @@ header .menu .item a:hover {
     line-height: 50px;
     color: #000;
     text-align: center;
-    font-family: "Raleway";
+    font-family: var(--font_family2);
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
 }
+.tarif_item .btn:hover {
+    background: radial-gradient(90.77% 90.77% at 50% 9.23%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), #FFD400;
+    color: #000;
+}
 .tarif_item.active {
-    background: #224FD6;
+    background: var(--text_color);
 }
 .tarif_item.active .tarif_item-title {
     background: #fff;
@@ -811,7 +834,7 @@ header .menu .item a:hover {
     background: url(../images/check2.svg);
 }
 .tarif_item:hover {
-    background: #224FD6;
+    background: var(--text_color);
 }
 .tarif_item:hover .tarif_item-title {
     background: #fff;
@@ -857,7 +880,7 @@ header .menu .item a:hover {
     background: #fff;
     transform: skewX(-20deg);
     width: 100%;
-    height: 84px;
+    height: 100%;
     top: 0;
     left: 0;
     z-index: -1;
@@ -865,7 +888,7 @@ header .menu .item a:hover {
 }
 .accordion_item .head .accordion_title {
     color: #4E4E4E;
-    font-family: "Raleway";
+    font-family: var(--font_family2);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -877,7 +900,7 @@ header .menu .item a:hover {
 }
 .accordion_item .data {
     color: #4E4E4E;
-    font-family: "Raleway";
+    font-family: var(--font_family2);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -893,7 +916,7 @@ header .menu .item a:hover {
     margin-top: 20px;
 }
 .faq_btn {
-    background: #224FD6;
+    background: var(--text_color);
     box-shadow: 0px 27px 137px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(10px);
     display: flex;
@@ -947,7 +970,7 @@ header .menu .item a:hover {
     content: "";
     width: 1099px;
     height: calc(100% + 180px);
-    background: #224FD6;
+    background: var(--text_color);
     left: -950px;
     top: -90px;
     border-radius: 20px;
@@ -961,7 +984,7 @@ header .menu .item a:hover {
     content: "";
     width: 1099px;
     height: calc(100% + 180px);
-    background: #224FD6;
+    background: var(--text_color);
     right: -950px;
     top: -90px;
     border-radius: 20px;
@@ -979,8 +1002,8 @@ header .menu .item a:hover {
 }
 .callback_form-title {
     color: #000;
-    font-family: "Benzin";
-    font-size: 48px;
+    font-family: var(--font_family1);
+    font-size: var(--font_size_title);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -988,8 +1011,8 @@ header .menu .item a:hover {
 }
 .callback_form-text {
     color: #4E4E4E;
-    font-family: "Raleway";
-    font-size: 22px;
+    font-family: var(--font_family2);
+    font-size: var(--font_size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1015,21 +1038,22 @@ header .menu .item a:hover {
 	-o-transform: skew(20deg);  
     border: none;
     color: #4E4E4E;
-    font-family: "Raleway";
-    font-size: 22px;
+    font-family: var(--font_family2);
+    font-size: var(--font_size);
     font-style: normal;
     font-weight: 400;
     line-height: 58px;
 }
 .callback_form .line input::placeholder {
     color: #4E4E4E;
-    font-family: "Raleway";
-    font-size: 22px;
+    font-family: var(--font_family2);
+    font-size: var(--font_size);
     font-style: normal;
     font-weight: 400;
     line-height: 58px;
 }
 .callback_form button {
+    transition: all .4s;
     border-radius: 10px;
     -webkit-transform: skew(-20deg);
 	-moz-transform: skew(-20deg);
@@ -1039,12 +1063,16 @@ header .menu .item a:hover {
     flex-shrink: 0;
     color: #FFF;
     text-align: center;
-    font-family: "Raleway";
+    font-family: var(--font_family2);
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    background: radial-gradient(85.13% 90.77% at 46.89% 9.23%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), #224FD6;
+    background: radial-gradient(85.13% 90.77% at 46.89% 9.23%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), var(--text_color);
+}
+.callback_form button:hover {
+    background: radial-gradient(90.77% 90.77% at 50% 9.23%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), #FFD400;
+    color: #000;
 }
 .callback_form button span {
     -webkit-transform: skew(20deg);
@@ -1058,6 +1086,14 @@ header .menu .item a:hover {
     top: 50%;
     transform: translateY(-50%);
     z-index: 555;
+    width: 814px;
+    height: 458px;
+}
+.callback_img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -1135,7 +1171,7 @@ header .menu .item a:hover {
     content: "";
     width: 260px;
     height: 100%;
-    background: #224FD6;
+    background: var(--text_color);
     right: -120px;
     top: 0;
     border-radius: 20px;
@@ -1153,7 +1189,7 @@ header .menu .item a:hover {
 }
 .advantages_item-text {
     color: #666;
-    font-family: "Raleway";
+    font-family: var(--font_family2);
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -1165,13 +1201,41 @@ header .menu .item a:hover {
 .advantages_item-img img {
     display: block;
 }
+.advantages_item:nth-child(1) .advantages_item-img {
+    width: 254px;
+    height: 251px;
+} 
+.advantages_item:nth-child(2) .advantages_item-img {
+    width: 247px;
+    height: 284px;
+} 
+.advantages_item:nth-child(3) .advantages_item-img {
+    width: 284px;
+    height: 546px;
+} 
+.advantages_item:nth-child(4) .advantages_item-img {
+    width: 238px;
+    height: 234px;
+} 
+.advantages_item:nth-child(5) .advantages_item-img {
+    width: 306px;
+    height: 251px;
+} 
+.advantages_item:nth-child(6) .advantages_item-img {
+    width: 269px;
+    height: 282px;
+} 
+.advantages_item:nth-child(7) .advantages_item-img {
+    width: 397px;
+    height: 282px;
+} 
 
 
 
 
 .bottom-block {
     padding: 57px 0 82px;
-    background: #224FD6;
+    background: var(--text_color);
 }
 .bottom-block .callback_form {
     background: none;
@@ -1183,8 +1247,8 @@ header .menu .item a:hover {
 }
 .bottom-block .callback_form-text {
     color: #FFF;
-    font-family: "Raleway";
-    font-size: 22px;
+    font-family: var(--font_family2);
+    font-size: var(--font_size);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1195,7 +1259,7 @@ header .menu .item a:hover {
 }
 .bottom-block .callback_form button {
     color: #000;
-    background: linear-gradient(0deg, #FFD400 0%, #FFD400 100%), #224FD6;
+    background: linear-gradient(0deg, #FFD400 0%, #FFD400 100%), var(--text_color);
 }
 
 
@@ -1223,7 +1287,7 @@ footer .menu {
 footer .menu .item a {
     text-decoration: none;
     color: #fff;
-    font-family: "Raleway";
+    font-family: var(--font_family2);
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
@@ -1235,9 +1299,6 @@ footer .menu .item a {
 footer .menu .item a:last-child {
     margin-right: 0;
 }
-footer .menu .item a:hover {
-    color: #000;
-}
-.footer .menu .item a:active {
-    color: #000;
+footer .menu .item:hover  a{
+    color: #FFD400;
 }
