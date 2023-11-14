@@ -36,35 +36,6 @@ $(() => {
 	});
 
 
-	$('body').on('click', '.modal_link', function (e) {
-		e.preventDefault()
-
-		Fancybox.close(true)
-		Fancybox.show([{
-			src: $(this).data('content'),
-			type: 'inline',
-		}]);
-	})
-
-
-	// Fancybox
-	Fancybox.defaults.autoFocus = false
-	Fancybox.defaults.trapFocus = false
-	Fancybox.defaults.dragToClose = false
-	Fancybox.defaults.placeFocusBack = false
-	Fancybox.defaults.l10n = {
-		CLOSE: "Закрыть",
-		NEXT: "Следующий",
-		PREV: "Предыдущий",
-		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
-	}
-
-	Fancybox.defaults.template = {
-		closeButton: '<img src=images/close.svg>',
-		// spinner: '<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="25 25 50 50" tabindex="-1"><circle cx="50" cy="50" r="20"/></svg>',
-		// main: null
-	}
-
 
 	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
 
@@ -88,23 +59,13 @@ $(() => {
 
 
 
-
-	$(window).scroll(function () {
-		if ($(window).scrollTop() > 180) {
-			$('#top').fadeIn(400)
-		} else {
-			$('#top').fadeOut(300)
-		}
-	});
-
-
 	// Скрол к пунктам меню
 	$(".scroll").on("click", function (e) {
 		e.preventDefault();
 		let id = $(this).attr("href");
 
 		$("html, body").animate({
-			scrollTop: $(id).offset().top - 82
+			scrollTop: $(id).offset().top - 40
 		}, {
 			duration: 400,
 			easing: "swing"

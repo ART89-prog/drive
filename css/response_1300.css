@@ -4,6 +4,12 @@
         --font_size_title: 36px;
         --font_size: 18px;
     }
+    .first-section_img {
+        margin-right: -155px;
+    }
+    .first-section_info ul li {
+        font-size: 22px;
+    }
     header .menu .item a {
         font-size: 19px;
     }
