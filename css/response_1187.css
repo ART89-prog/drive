@@ -1,45 +1,70 @@
 @media print, (max-width: 1187px) {
 
-    .first_section .cont {
-        flex-direction: column;
+    .advantages_item:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
-    .first_section-wrap {
-        width: 100%;
-        margin-bottom: 52px;
+    .advantages_item:nth-child(2) {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
-    .first_section .swiper-slide {
-        width: 100%;
+    .advantages_item:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 3;        
     }
-    .first_section .swiper {
-        width: 100%;
+    .advantages_item:nth-child(4) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
     }
-    .first_section .swiper-slide img {
+    .advantages_item:nth-child(5) {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .advantages_item:nth-child(6) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .advantages_item:nth-child(7) {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .advantages_item:nth-child(3) .advantages_item-img {
+        width: 148px;
+        height: 246px;
+    }
+    .advantages_item:nth-child(3) .advantages_item-img img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
     }
-    .advantages_wrap {
-        flex-direction: column;
-        padding: 40px 78px;
-        margin-top: 60px;
-        padding: 66px;
+    .advantages_item:nth-child(6):before, 
+    .advantages_item:nth-child(7):before {
+        width: 260px;
     }
-    .advantages_wrap_text {
-        max-width: 100%;
-        margin-bottom: 30px;
+    .advantages_item:nth-child(6) .advantages_item-img, 
+    .advantages_item:nth-child(7) .advantages_item-img {
+        margin-right: 0;
     }
-    .advantages_wrap_phone {
-        margin-bottom: 27px;
+    .accordion_item .head {
+        padding-left: 40px;
     }
-    .map_wrap {
-        width: 620px;
+    .first-section_info ul li {
+        font-size: 22px;
     }
-    .contacts_info {
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 0;
-        width: calc(100% - 650px);
-    }
+
 
 
 
