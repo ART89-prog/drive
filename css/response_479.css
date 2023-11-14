@@ -33,6 +33,7 @@
     }
     .callback_form button {
         font-size: 13px;
+        height: 50px;
     }
     .advantages_item:nth-child(1) .advantages_item-img {
         width: 127px;
@@ -130,7 +131,51 @@
         width: 100%;
         margin-left: 0px;
     }
-
+    .bottom-block .callback_form {
+        padding: 26px 19px;
+        border-radius: 32px;
+        background: #fff;
+    }
+    .bottom-block .callback_form-text {
+        color: #4E4E4E;
+        font-size: 12px;
+        margin-bottom: 16px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .bottom-block .callback_form button {
+        height: 50px;
+        color: #fff;
+        background: radial-gradient(85.13% 90.77% at 46.89% 9.23%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), #224FD6;
+    }
+    .callback_form .line .field {
+        height: 50px;
+    }
+    .callback_form .line input {
+        width: 100%;
+        height: 48px;
+    }
+    .callback_form {
+        position: relative;
+    }
+    .callback_form-img {
+        position: absolute;
+        display: block;
+        width: 124px;
+        height: 70px;
+        top: 7px;
+        right: 20px;
+        z-index: 99;
+    }
+    .callback_form-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .program_item-icon img {
+        width: 32px;
+        margin-left: 24px;
+    }
 
 
 

@@ -1007,6 +1007,9 @@ header .menu .item a:hover {
     background: #fff;
     border-radius: 32px;
 }
+.callback_form-img {
+    display: none;
+}
 .callback_form-title {
     color: #000;
     font-family: var(--font_family1);
