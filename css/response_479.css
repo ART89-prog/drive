@@ -44,12 +44,13 @@
         height: 163px;
     } 
     .advantages_item:nth-child(3) .advantages_item-img {
-        width: 242px;
-        height: 253px;
-        margin-bottom: -100px;
-        margin-right: -20px;
-        transform: skewX(20deg);
-    } 
+        width: 105px;
+        height: auto;
+        margin-right: 36px;
+        transform: rotate(-12deg);
+        margin-top: 0;
+        margin-bottom: -74px;
+    }
     .advantages_item:nth-child(4) .advantages_item-img {
         width: 119px;
         height: 117px;
