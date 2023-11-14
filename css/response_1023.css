@@ -203,6 +203,11 @@
     .advantages_item:nth-child(3):before {
         width: 260px;
     }
+    .advantages_item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     footer .menu {
         flex-direction: column;
     }

@@ -34,25 +34,62 @@
     .callback_form button {
         font-size: 13px;
     }
-    /* .advantages_item:nth-child(1) .advantages_item-img,
-    .advantages_item:nth-child(2) .advantages_item-img,
-    .advantages_item:nth-child(3) .advantages_item-img,
-    .advantages_item:nth-child(4) .advantages_item-img,
-    .advantages_item:nth-child(5) .advantages_item-img,
-    .advantages_item:nth-child(6) .advantages_item-img,
+    .advantages_item:nth-child(1) .advantages_item-img {
+        width: 127px;
+        height: 125px;
+    } 
+    .advantages_item:nth-child(2) .advantages_item-img {
+        width: 123px;
+        height: 163px;
+    } 
+    .advantages_item:nth-child(3) .advantages_item-img {
+        width: 242px;
+        height: 253px;
+        margin-bottom: -100px;
+        margin-right: -20px;
+        transform: skewX(20deg);
+    } 
+    .advantages_item:nth-child(4) .advantages_item-img {
+        width: 119px;
+        height: 117px;
+    } 
+    .advantages_item:nth-child(5) .advantages_item-img {
+        width: 153px;
+        height: 125px;
+    } 
+    .advantages_item:nth-child(6) .advantages_item-img {
+        width: 134px;
+        height: 141px;
+    } 
     .advantages_item:nth-child(7) .advantages_item-img {
-        width: 50%;
-        height: auto;
-    }
+        margin-right: -45px;
+        width: 198px;
+        height: 141px;
+    } 
     .advantages_item .advantages_item-img img {
-        width: 100%;
         height: 100%;
-    } */
+    } 
+    .advantages_item:before {
+        width: 220px;
+    }
+    .advantages_item:nth-child(3):before {
+        width: 220px;
+    }
+    .advantages_item:nth-child(6):before, 
+    .advantages_item:nth-child(7):before {
+        width: 220px;
+    }
+    .advantages_item-text {
+        font-size: 12px;
+    }
     .accordion_item .head .accordion_title {
         font-size: 12px;
     }
     .accordion_item .data {
         font-size: 12px;
+    }
+    .accordion .accordion_item .data p+p {
+        margin-top: 10px;
     }
     .first-section {
         padding: 30px 0 26px;
@@ -78,6 +115,20 @@
     }
     .tarif_item ul li:before {
         top: -2px;
+    }
+    .faq_btn {
+        width: 72px;
+        height: 49px;
+        border-radius: 12px;
+    }
+    .accordion_item .faq_btn span, 
+    .accordion_item .faq_btn b {
+        font-size: 38px;
+    }
+    .bottom-block .callback_form-title {
+        font-size: 16px;
+        width: 100%;
+        margin-left: 0px;
     }
 
 
