@@ -1,6 +1,23 @@
 @media (max-width: 479px) {
 
- 
+    .first-section .btn {
+        width: 100%;
+    }
+    .training_item-title {
+        font-size: 13px;
+    }
+    .training_item-text {
+        font-size: 12px;
+    }
+    :root {
+        --font_size_title: 18px;
+        --font_size: 14px;
+    }
+    .title {
+        margin-bottom: 10px;
+    }
+
+
 
 
 }

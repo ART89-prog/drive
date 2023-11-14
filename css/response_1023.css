@@ -85,7 +85,13 @@
         margin: 50px 0;
     }
     .first-section_img {
-        margin-right: 0;
+        display: none;
+    }
+    .first-section_img-mob {
+        display: block;
+        margin-top: 10px;
+    }
+    .first-section_img-mob img {
         width: 100%;
         height: auto;
     }
@@ -221,6 +227,10 @@
     footer .menu .item + .item {
         margin-top: 16px;
     }
+    .first-section .btn {
+        margin: 0 auto;
+    }
+
 
     
 

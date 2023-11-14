@@ -513,6 +513,12 @@ header .menu .item a:hover {
     width: 1071px;
     height: 761px;
 }
+.first-section_img-mob {
+    display: none;
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+}
 .first-section_img img {
     width: 100%;
     height: 100%;
