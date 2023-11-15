@@ -1117,49 +1117,49 @@ header .menu .item a:hover {
 }
 .advantages_items {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 30px;    
 }
 .advantages_item:nth-child(1) {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 .advantages_item:nth-child(2) {
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-start: 6;
+    grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 .advantages_item:nth-child(3) {
-    grid-column-start: 5;
-    grid-column-end: 7;
+    grid-column-start: 10;
+    grid-column-end: 13;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 .advantages_item:nth-child(4) {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 .advantages_item:nth-child(5) {
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-start: 6;
+    grid-column-end: 10;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 .advantages_item:nth-child(6) {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 7;
     grid-row-start: 3;
     grid-row-end: 4;
 }
 .advantages_item:nth-child(7) {
-    grid-column-start: 4;
-    grid-column-end: 7;
+    grid-column-start: 7;
+    grid-column-end: 13;
     grid-row-start: 3;
     grid-row-end: 4;
 }
