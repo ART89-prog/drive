@@ -50,10 +50,6 @@
         width: 100%;
         height: 100%;
     }
-    .advantages_item:nth-child(6):before, 
-    .advantages_item:nth-child(7):before {
-        width: 260px;
-    }
     .advantages_item:nth-child(6) .advantages_item-img, 
     .advantages_item:nth-child(7) .advantages_item-img {
         margin-right: 0;

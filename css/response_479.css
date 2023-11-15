@@ -71,16 +71,6 @@
     .advantages_item .advantages_item-img img {
         height: 100%;
     } 
-    .advantages_item:before {
-        width: 220px;
-    }
-    .advantages_item:nth-child(3):before {
-        width: 220px;
-    }
-    .advantages_item:nth-child(6):before, 
-    .advantages_item:nth-child(7):before {
-        width: 220px;
-    }
     .advantages_item-text {
         font-size: 12px;
     }

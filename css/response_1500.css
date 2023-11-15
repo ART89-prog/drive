@@ -10,6 +10,21 @@
     .advantages_item-text {
         font-size: 20px;
     }
+    .first-section_img {
+        width: 580px;
+        height: 412px;
+        margin-right: 0;
+    }
+    .first-section_info ul {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .first-section_info {
+        margin-top: 0;
+    }
+    .first-section_wrap {
+        align-items: center;
+    }
 
 
 
