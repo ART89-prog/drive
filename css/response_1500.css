@@ -25,6 +25,16 @@
     .first-section_wrap {
         align-items: center;
     }
+    .cont {
+        padding: 0 80px;
+    }
+    .callback_form .line .field {
+        max-width: 286px;
+        padding: 0 20px;
+    }
+    .callback_form {
+        padding: 107px 142px 184px 235px;
+    }
 
 
 

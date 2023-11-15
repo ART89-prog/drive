@@ -35,7 +35,7 @@
         font-size: 13px;
         height: 50px;
     }
-    .advantages_item:nth-child(1) .advantages_item-img {
+    /* .advantages_item:nth-child(1) .advantages_item-img {
         width: 127px;
         height: 125px;
     } 
@@ -67,10 +67,13 @@
         margin-right: -45px;
         width: 198px;
         height: 141px;
-    } 
-    .advantages_item .advantages_item-img img {
+    }  */
+    /* .advantages_item .advantages_item-img img {
         height: 100%;
-    } 
+    }  */
+    .cont {
+        padding: 0 20px;
+    }
     .advantages_item-text {
         font-size: 12px;
     }

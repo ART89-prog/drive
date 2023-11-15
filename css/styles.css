@@ -1187,7 +1187,7 @@ header .menu .item a:hover {
     width: 100%;
     height: 100%;
     background: var(--text_color);
-    right: -70%;
+    right: -63%;
     top: 0;
     border-radius: 20px;
     -webkit-transform: skew(-20deg);
@@ -1205,6 +1205,9 @@ header .menu .item a:hover {
 }
 .advantages_item-img {
     margin-top: auto;
+    width: 50%;
+    flex-shrink: 0;
+    height: auto;
 }
 .advantages_item-img img {
     display: block;
@@ -1309,4 +1312,27 @@ footer .menu .item a:last-child {
 }
 footer .menu .item:hover  a{
     color: #FFD400;
+}
+
+
+
+
+.modal {
+    max-width: 300px;    
+    padding: 80px 25px;
+    border-radius: 15px;
+    display: none;
+}
+.modal_title{
+    color: var(--text_color);
+    font-family: var(--font_family1);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+.fancybox__content>.carousel__button.is-close {
+    top: 0px;
 }
