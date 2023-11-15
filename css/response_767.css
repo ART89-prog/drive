@@ -108,7 +108,7 @@
     }
     .faq_btn {
         width: 102px;
-        height: 71px;
+        height: auto;
     }
     .accordion_item .head:before {
         border-radius: 10px;

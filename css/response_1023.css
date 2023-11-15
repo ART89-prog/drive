@@ -80,6 +80,7 @@
     .first-section_info {
         max-width: 100%;
         margin-bottom: 25px;
+        margin-top: 0;
     }
     .first-section_info ul {
         margin: 50px 0;
