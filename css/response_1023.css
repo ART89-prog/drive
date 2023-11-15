@@ -159,6 +159,9 @@
         padding: 15px 0 0 15px;
         border-radius: 20px;
     }
+    .advantages_item-text {
+        font-size: 24px;
+    }
     .advantages_item:nth-child(1) {
         grid-column-start: 1;
         grid-column-end: 13;

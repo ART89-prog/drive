@@ -36,10 +36,11 @@
         height: 50px;
     }
     .advantages_item:nth-child(3) .advantages_item-img {
-        margin-bottom: -125px;
+        margin-bottom: -60px;
     }
     .advantages_item-text {
         font-size: 12px;
+        width: 68%;
     }
     .accordion_item .head .accordion_title {
         font-size: 12px;
@@ -143,6 +144,18 @@
     .link-more.btn {
         font-size: 16px;
     }
+    .advantages_item-img {
+        width: 25% !important;
+    }
+    .advantages_item:before {
+        width: 100%;
+        height: 100%;
+        right: -82%;
+        top: 16px;
+        border-radius: 17px;
+    }
+    
+    
 
 
 
