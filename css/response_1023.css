@@ -201,11 +201,6 @@
         grid-row-start: 7;
         grid-row-end: 8;
     }
-    .advantages_item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
     footer .menu {
         flex-direction: column;
     }
@@ -239,8 +234,8 @@
     .bottom-block {
         padding: 40px 0 40px;
     }
-    .cont {
-        padding: 0 50px;
+    .advantages_item-img img {
+        width: 100%;
     }
 
 

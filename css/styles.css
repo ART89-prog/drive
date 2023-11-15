@@ -1205,14 +1205,15 @@ header .menu .item a:hover {
 }
 .advantages_item-img {
     margin-top: auto;
-    width: 50%;
+    width: 50% !important;
     flex-shrink: 0;
-    height: auto;
+    height: auto !important;
 }
 .advantages_item-img img {
     display: block;
+    /* width: 100%; */
 }
-.advantages_item:nth-child(1) .advantages_item-img {
+/* .advantages_item:nth-child(1) .advantages_item-img {
     width: 254px;
     height: 251px;
 } 
@@ -1239,7 +1240,7 @@ header .menu .item a:hover {
 .advantages_item:nth-child(7) .advantages_item-img {
     width: 397px;
     height: 282px;
-} 
+}  */
 
 
 

@@ -49,6 +49,20 @@
     .accordion_item .head {
         padding-left: 40px;
     }
+    .advantages_item:nth-child(3) .advantages_item-img {
+        width: 105px;
+        height: auto;
+        margin-right: 0;
+        transform: rotate(-12deg);
+        margin-top: 0;
+        margin-bottom: -210px;
+    }
+    .advantages_item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
 
 
 
